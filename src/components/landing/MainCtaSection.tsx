@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Clock, RefreshCw, CreditCard } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { trackInitiateCheckout } from "@/lib/metaPixel";
 
 const CHECKOUT_URL = "https://pay.cakto.com.br/3b8fhuv_741916";
+
+const handleCheckoutClick = () => {
+  trackInitiateCheckout(14.90, "Guia Prático Infantil + Caderno de Alfabetização");
+};
 
 const MainCtaSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -66,6 +71,7 @@ const MainCtaSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block mb-5 md:mb-8"
+                onClick={handleCheckoutClick}
               >
                 <Button
                   variant="cta"
