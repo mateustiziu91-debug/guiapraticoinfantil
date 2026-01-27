@@ -23,25 +23,25 @@ const TestimonialsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="section-light py-20 md:py-28 px-4">
+    <section className="section-light py-12 md:py-28 px-4">
       <div className="container max-w-4xl">
         <div 
           ref={ref}
           className={`scroll-animate ${isVisible ? 'visible' : ''}`}
         >
-          <div className="text-center mb-14">
-            <span className="inline-block bg-secondary text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="text-center mb-8 md:mb-14">
+            <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium mb-3 md:mb-4">
               Depoimentos reais
             </span>
-            <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-foreground mb-2 md:mb-4">
               O que outros pais estão dizendo
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-sm md:text-lg">
               Famílias reais, resultados reais
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid gap-4 md:grid-cols-3 md:gap-6">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} {...testimonial} />
             ))}

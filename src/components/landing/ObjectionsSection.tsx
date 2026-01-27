@@ -38,34 +38,34 @@ const ObjectionsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-20 md:py-28 px-4 bg-background">
+    <section className="py-12 md:py-28 px-4 bg-background">
       <div className="container max-w-4xl">
         <div 
           ref={ref}
           className={`scroll-animate ${isVisible ? 'visible' : ''}`}
         >
-          <div className="text-center mb-14">
-            <span className="inline-block bg-secondary text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="text-center mb-8 md:mb-14">
+            <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium mb-3 md:mb-4">
               Sem riscos
             </span>
-            <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-foreground mb-2 md:mb-4">
               Você pode confiar
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-sm md:text-lg">
               Sua segurança é nossa prioridade
             </p>
           </div>
           
-          <div className="bg-card rounded-3xl p-8 md:p-12 border-2 border-primary/20 shadow-lg">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-card rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-12 border-2 border-primary/20 shadow-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
               {objections.map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-xl shrink-0">
-                    <item.icon className="w-5 h-5 text-primary" />
+                <div key={index} className="flex items-start gap-3 md:gap-4">
+                  <div className="bg-primary/10 p-2.5 md:p-3 rounded-lg md:rounded-xl shrink-0">
+                    <item.icon className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-muted-foreground text-sm">{item.description}</p>
+                    <h3 className="font-bold text-foreground text-sm md:text-base mb-0.5 md:mb-1">{item.title}</h3>
+                    <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               ))}
