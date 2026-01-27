@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { initMetaPixel, trackPageView } from '@/lib/metaPixel';
+import { sendServerEvent } from '@/lib/metaPixel';
 
 interface MetaPixelProviderProps {
   children: React.ReactNode;
@@ -7,11 +7,8 @@ interface MetaPixelProviderProps {
 
 const MetaPixelProvider = ({ children }: MetaPixelProviderProps) => {
   useEffect(() => {
-    // Initialize Meta Pixel on mount
-    initMetaPixel();
-    
-    // Track initial page view
-    trackPageView();
+    // Send server-side PageView event for API de Conversões
+    sendServerEvent('PageView');
   }, []);
 
   return <>{children}</>;
