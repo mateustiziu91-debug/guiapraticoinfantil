@@ -37,7 +37,7 @@ const FinalCtaSection = () => {
           </Button>
 
           <p className="text-sm text-muted-foreground mt-4">
-            Apenas <span className="text-primary font-semibold">R$ 14,90</span> • Acesso imediato
+            <span className="text-primary font-semibold">R$ 14,90</span> • Guia + Caderno de Alfabetização • Acesso imediato
           </p>
         </div>
       </div>

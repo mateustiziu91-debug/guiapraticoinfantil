@@ -52,10 +52,10 @@ const WhatYouGetSection = () => {
               O que você recebe
             </span>
             <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4">
-              Tudo o que está incluído no guia
+              Tudo o que está incluído
             </h2>
             <p className="text-muted-foreground text-lg">
-              Por apenas <span className="text-primary font-bold">R$ 14,90</span>
+              Por apenas <span className="text-primary font-bold">R$ 14,90</span> — inclui brinde exclusivo
             </p>
           </div>
           
