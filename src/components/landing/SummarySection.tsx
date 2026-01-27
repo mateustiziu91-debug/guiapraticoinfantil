@@ -28,38 +28,38 @@ const SummarySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-16 md:py-20 px-4 bg-secondary/30">
+    <section className="py-10 md:py-20 px-4 bg-secondary/30">
       <div className="container max-w-3xl">
         <div 
           ref={ref}
           className={`scroll-animate ${isVisible ? 'visible' : ''}`}
         >
-          <div className="text-center mb-10">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+          <div className="text-center mb-6 md:mb-10">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-1 md:mb-2">
               Tudo o que você recebe hoje
             </h2>
-            <p className="text-muted-foreground">
-              Por apenas <span className="text-primary font-bold text-lg">R$ 14,90</span>
+            <p className="text-muted-foreground text-sm md:text-base">
+              Por apenas <span className="text-primary font-bold text-base md:text-lg">R$ 14,90</span>
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="bg-card rounded-2xl p-5 border border-border/50 flex items-start gap-4"
+                className="bg-card rounded-xl md:rounded-2xl p-3.5 md:p-5 border border-border/50 flex items-start gap-3 md:gap-4"
               >
-                <div className="bg-primary/10 rounded-xl p-2.5 shrink-0">
-                  <item.icon className="w-5 h-5 text-primary" />
+                <div className="bg-primary/10 rounded-lg md:rounded-xl p-2 md:p-2.5 shrink-0">
+                  <item.icon className="w-4 h-4 md:w-5 md:h-5 text-primary" />
                 </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-1">
-                    <Check className="w-4 h-4 text-primary shrink-0" />
-                    <h3 className="font-semibold text-foreground text-sm">
+                <div className="min-w-0">
+                  <div className="flex items-center gap-1.5 md:gap-2 mb-0.5 md:mb-1">
+                    <Check className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary shrink-0" />
+                    <h3 className="font-semibold text-foreground text-xs md:text-sm leading-tight">
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-muted-foreground text-xs">
+                  <p className="text-muted-foreground text-[10px] md:text-xs leading-relaxed">
                     {item.description}
                   </p>
                 </div>
