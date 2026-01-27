@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import parentChildImage from "@/assets/parent-child-activity.jpg";
+import { trackViewContent } from "@/lib/metaPixel";
+import { useEffect } from "react";
 
 const HeroSection = () => {
+  useEffect(() => {
+    // Track ViewContent when hero section loads
+    trackViewContent("Guia Prático Infantil", 14.90);
+  }, []);
+
   const scrollToCta = () => {
     const ctaElement = document.getElementById("cta-principal");
     if (ctaElement) {
