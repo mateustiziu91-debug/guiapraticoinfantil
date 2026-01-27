@@ -29,18 +29,33 @@ const MainCtaSection = () => {
                 Comece hoje a transformar a rotina do seu filho
               </h2>
               
-              <p className="text-muted-foreground mb-6 text-lg">
+              <p className="text-muted-foreground mb-4 text-lg">
                 Menos telas, mais conexão. Atividades prontas para você usar agora mesmo.
               </p>
 
+              {/* What's included */}
+              <div className="bg-secondary/50 rounded-xl p-4 mb-6 text-left">
+                <p className="text-sm font-semibold text-foreground mb-2">Você recebe:</p>
+                <ul className="space-y-1.5 text-sm text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full shrink-0" />
+                    Guia Principal com atividades educativas
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full shrink-0" />
+                    <span className="text-accent font-medium">Brinde:</span> Caderno de Alfabetização (+150 atividades)
+                  </li>
+                </ul>
+              </div>
+
               {/* Price Display */}
-              <div className="price-highlight rounded-2xl p-6 mb-8">
-                <p className="text-muted-foreground text-sm mb-2">Investimento único</p>
+              <div className="price-highlight rounded-2xl p-5 md:p-6 mb-8">
+                <p className="text-muted-foreground text-sm mb-2">Tudo isso por apenas</p>
                 <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-muted-foreground text-xl price-original">R$ 47,00</span>
-                  <span className="text-4xl md:text-5xl font-extrabold text-primary">R$ 14,90</span>
+                  <span className="text-muted-foreground text-lg md:text-xl price-original">R$ 47,00</span>
+                  <span className="text-3xl md:text-5xl font-extrabold text-primary">R$ 14,90</span>
                 </div>
-                <p className="text-primary font-semibold text-sm">
+                <p className="text-primary font-semibold text-xs md:text-sm">
                   Menos que um lanche — e transforma a rotina da sua família
                 </p>
               </div>

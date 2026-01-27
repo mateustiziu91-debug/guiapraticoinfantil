@@ -38,6 +38,7 @@
 
     /* Custom tokens */
     --hero-gradient: linear-gradient(135deg, hsl(145 30% 94%) 0%, hsl(40 40% 97%) 50%, hsl(15 50% 95%) 100%);
+    --bonus-gradient: linear-gradient(135deg, hsl(15 40% 97%) 0%, hsl(40 40% 98%) 50%, hsl(145 30% 97%) 100%);
     --cta-gradient: linear-gradient(135deg, hsl(145 45% 42%) 0%, hsl(145 50% 35%) 100%);
     --cta-hover-gradient: linear-gradient(135deg, hsl(145 50% 38%) 0%, hsl(145 55% 30%) 100%);
     --section-light: hsl(40 40% 99%);
@@ -89,6 +90,10 @@
 @layer components {
   .hero-bg {
     background: var(--hero-gradient);
+  }
+
+  .bonus-gradient {
+    background: var(--bonus-gradient);
   }
 
   .section-light {

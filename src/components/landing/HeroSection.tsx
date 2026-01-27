@@ -42,7 +42,7 @@ const HeroSection = () => {
               </Button>
               
               <p className="text-sm text-muted-foreground">
-                Acesso imediato • Apenas R$ 14,90
+                Acesso imediato • R$ 14,90 + Brinde Exclusivo
               </p>
             </div>
           </div>
