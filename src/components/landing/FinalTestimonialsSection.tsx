@@ -1,4 +1,5 @@
 import TestimonialCard from "./TestimonialCard";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const testimonials = [
   {
@@ -14,19 +15,26 @@ const testimonials = [
 ];
 
 const FinalTestimonialsSection = () => {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
     <section className="section-alt py-16 md:py-20 px-4">
       <div className="container max-w-3xl">
-        <div className="text-center mb-10">
-          <h2 className="text-xl md:text-2xl font-bold text-foreground">
-            Mais histórias de pais como você
-          </h2>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard key={index} {...testimonial} />
-          ))}
+        <div 
+          ref={ref}
+          className={`scroll-animate ${isVisible ? 'visible' : ''}`}
+        >
+          <div className="text-center mb-10">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">
+              Mais histórias de pais como você
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {testimonials.map((testimonial, index) => (
+              <TestimonialCard key={index} {...testimonial} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
