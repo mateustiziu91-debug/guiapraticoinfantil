@@ -18,13 +18,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="hero-bg min-h-[100svh] flex items-center justify-center px-4 py-12 md:py-24 overflow-hidden">
+    <section className="hero-bg min-h-[100svh] flex items-center justify-center px-4 pt-6 pb-8 md:py-24 overflow-hidden">
       <div className="container max-w-5xl">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <div className="fade-in-up">
-              <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6">
+              <span className="inline-block bg-secondary text-secondary-foreground px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-medium mb-3 md:mb-6">
                 Para crianças de 3 a 5 anos
               </span>
             </div>
@@ -37,15 +37,15 @@ const HeroSection = () => {
               Descubra atividades simples e prontas para fazer em casa, sem precisar de experiência ou muito tempo.
             </p>
             
-            <div className="fade-in-up fade-in-up-delay-3 flex flex-col items-center lg:items-start gap-3 md:gap-4">
+            <div className="fade-in-up fade-in-up-delay-3 flex flex-col items-center lg:items-start gap-3 md:gap-4 w-full">
               <Button
                 variant="ctaSecondary"
                 size="lg"
                 onClick={scrollToCta}
-                className="group w-full sm:w-auto text-base md:text-lg py-4 px-6 md:py-5 md:px-8"
+                className="group w-full max-w-md text-base md:text-lg py-5 px-6 md:py-5 md:px-8 min-h-[56px] touch-manipulation"
               >
                 Quero Conhecer as Atividades
-                <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
+                <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
               </Button>
               
               <p className="text-xs md:text-sm text-muted-foreground">
@@ -54,9 +54,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Image - Hidden on very small screens, shown smaller on mobile */}
+          {/* Image - Compact on mobile */}
           <div className="fade-in-up order-1 lg:order-2">
-            <div className="image-card relative max-w-xs sm:max-w-sm md:max-w-none mx-auto">
+            <div className="image-card relative max-w-[280px] sm:max-w-sm md:max-w-none mx-auto">
               <img 
                 src={parentChildImage} 
                 alt="Mãe e filho fazendo atividade educativa juntos" 

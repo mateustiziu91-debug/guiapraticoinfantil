@@ -22,7 +22,7 @@ const SolutionSection = () => {
   };
 
   return (
-    <section className="py-12 md:py-28 px-4 bg-background">
+    <section className="py-10 md:py-28 px-3 sm:px-4 bg-background">
       <div className="container max-w-5xl">
         <div 
           ref={ref}
@@ -76,7 +76,7 @@ const SolutionSection = () => {
                     variant="ctaSecondary"
                     size="lg"
                     onClick={scrollToCta}
-                    className="w-full py-3 md:py-4 text-sm md:text-base"
+                    className="w-full py-4 md:py-4 text-sm md:text-base min-h-[52px] touch-manipulation"
                   >
                     Quero Ter Acesso Agora
                   </Button>
