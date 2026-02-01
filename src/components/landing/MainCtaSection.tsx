@@ -13,7 +13,7 @@ const MainCtaSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="cta-principal" className="py-12 md:py-28 px-4 bg-background">
+    <section id="cta-principal" className="py-10 md:py-28 px-3 sm:px-4 bg-background">
       <div className="container max-w-2xl">
         <div 
           ref={ref}
@@ -70,16 +70,16 @@ const MainCtaSection = () => {
                 href={CHECKOUT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mb-5 md:mb-8"
+                className="block mb-6 md:mb-8 w-full"
                 onClick={handleCheckoutClick}
               >
                 <Button
                   variant="cta"
                   size="cta"
-                  className="w-full text-base sm:text-lg md:text-xl py-5 md:py-6 shadow-lg min-h-[56px] md:min-h-[72px] touch-manipulation"
+                  className="w-full text-base sm:text-lg md:text-xl py-6 md:py-6 shadow-lg min-h-[64px] md:min-h-[72px] touch-manipulation active:scale-[0.98] transition-transform"
                 >
                   Quero Ajudar Meu Filho Agora
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5 md:h-6 md:w-6" />
                 </Button>
               </a>
               

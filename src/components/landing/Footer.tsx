@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="py-8 px-4 bg-muted/50 border-t border-border/50">
+    <footer className="py-6 md:py-8 px-3 sm:px-4 bg-muted/50 border-t border-border/50">
       <div className="container max-w-4xl text-center">
         <p className="text-muted-foreground text-sm">
           © {new Date().getFullYear()} Todos os direitos reservados

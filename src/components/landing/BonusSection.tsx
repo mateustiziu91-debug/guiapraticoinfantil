@@ -41,7 +41,7 @@ const BonusSection = () => {
   };
 
   return (
-    <section className="py-12 md:py-28 px-4 bonus-gradient">
+    <section className="py-10 md:py-28 px-3 sm:px-4 bonus-gradient">
       <div className="container max-w-4xl">
         <div 
           ref={ref}
@@ -121,16 +121,16 @@ const BonusSection = () => {
           </div>
 
           {/* CTA - Mobile full width */}
-          <div className="text-center">
+          <div className="text-center w-full">
             <Button
               variant="ctaSecondary"
               size="lg"
               onClick={scrollToCta}
-              className="group w-full sm:w-auto py-4 px-6 text-sm md:text-base"
+              className="group w-full max-w-md py-4 px-6 text-sm md:text-base min-h-[52px] touch-manipulation"
             >
               Quero Receber Tudo Isso Agora
             </Button>
-            <p className="text-xs md:text-sm text-muted-foreground mt-2 md:mt-3">
+            <p className="text-xs md:text-sm text-muted-foreground mt-3 md:mt-3">
               Guia + Caderno de Alfabetização incluído
             </p>
           </div>

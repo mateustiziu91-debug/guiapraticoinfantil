@@ -13,7 +13,7 @@ const FinalCtaSection = () => {
   };
 
   return (
-    <section className="py-10 md:py-20 px-4 bg-background border-t border-border/50">
+    <section className="py-10 md:py-20 px-3 sm:px-4 bg-background border-t border-border/50">
       <div className="container max-w-2xl text-center">
         <div 
           ref={ref}
@@ -30,13 +30,13 @@ const FinalCtaSection = () => {
             variant="ctaSecondary"
             size="lg"
             onClick={scrollToCta}
-            className="group w-full sm:w-auto py-4 px-6 text-sm md:text-base"
+            className="group w-full max-w-md py-5 px-6 text-sm md:text-base min-h-[56px] touch-manipulation"
           >
-            <ArrowUp className="mr-2 h-4 w-4 group-hover:-translate-y-1 transition-transform" />
+            <ArrowUp className="mr-2 h-5 w-5 group-hover:-translate-y-1 transition-transform" />
             Quero Menos Tela e Mais Aprendizado
           </Button>
 
-          <p className="text-xs md:text-sm text-muted-foreground mt-3 md:mt-4">
+          <p className="text-xs md:text-sm text-muted-foreground mt-4 md:mt-4">
             <span className="text-primary font-semibold">R$ 14,90</span> • Guia + Brinde • Acesso imediato
           </p>
         </div>

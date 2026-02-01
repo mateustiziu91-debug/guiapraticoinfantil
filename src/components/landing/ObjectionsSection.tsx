@@ -38,7 +38,7 @@ const ObjectionsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-12 md:py-28 px-4 bg-background">
+    <section className="py-10 md:py-28 px-3 sm:px-4 bg-background">
       <div className="container max-w-4xl">
         <div 
           ref={ref}

@@ -18,7 +18,7 @@ const FinalTestimonialsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="section-alt py-10 md:py-20 px-4">
+    <section className="section-alt py-8 md:py-20 px-3 sm:px-4">
       <div className="container max-w-3xl">
         <div 
           ref={ref}

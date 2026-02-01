@@ -41,7 +41,7 @@ const WhatYouGetSection = () => {
   };
 
   return (
-    <section className="py-12 md:py-28 px-4 bg-background">
+    <section className="py-10 md:py-28 px-3 sm:px-4 bg-background">
       <div className="container max-w-4xl">
         <div 
           ref={ref}
@@ -75,12 +75,12 @@ const WhatYouGetSection = () => {
             ))}
           </div>
           
-          <div className="text-center">
+          <div className="text-center w-full">
             <Button
               variant="ctaSecondary"
               size="lg"
               onClick={scrollToCta}
-              className="group w-full sm:w-auto py-3 md:py-4 text-sm md:text-base"
+              className="group w-full max-w-md py-4 md:py-4 text-sm md:text-base min-h-[52px] touch-manipulation"
             >
               Quero Receber Meu Guia Agora
             </Button>

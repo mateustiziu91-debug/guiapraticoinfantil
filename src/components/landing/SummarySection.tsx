@@ -28,7 +28,7 @@ const SummarySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="py-10 md:py-20 px-4 bg-secondary/30">
+    <section className="py-8 md:py-20 px-3 sm:px-4 bg-secondary/30">
       <div className="container max-w-3xl">
         <div 
           ref={ref}

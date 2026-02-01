@@ -33,7 +33,7 @@ const BenefitsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section className="section-alt py-12 md:py-28 px-4">
+    <section className="section-alt py-10 md:py-28 px-3 sm:px-4">
       <div className="container max-w-4xl">
         <div 
           ref={ref}
